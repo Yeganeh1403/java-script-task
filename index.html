@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="javascript-project">
+  <meta name="author" content="Yeganeh-Mirian">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>javascript project</title>
+</head>
+
+<body>
+  <div id="bmi-container" class="container">
+    <h1>BMI Calculation</h1>
+    <h2>Enter your weight and height</h2>
+    <label for="weight">Weight (kg): <span id="weight-value">60</span></label>
+    <input id="weight" type="range" min="10" max="110" step="1" value="60">
+    <label for="height">Height (cm): <span id="height-value">170</span></label>
+    <input id="height" type="range" min="100" max="220" step="1" value="170">
+    <h3>BMI: <span id="bmi"></span></h3>
+    <h3>Status: <span id="status"></span></h3>
+  </div>
+
+  <div id="music-player" class="container">
+    <h1>Music Player</h1>
+    <img id="music-img" src="https://png.pngtree.com/background/20230412/original/pngtree-color-flow-series-visually-attractive-backdrop-made-of-streams-of-digital-picture-image_2410020.jpg">
+    <audio src="musics/Anna Sofia Nord - Hymn For August.mp3" id="music">
+      Your browser does not support the audio element.
+    </audio>
+    <p id="music-name">Hymn For August</p>
+    <progress id="progress-bar" max="100" value="0"></progress>
+    <div id="icons">
+      <i class="fa fa-repeat" id="repeat"></i>
+      <i class="fa fa-backward" id="backward"></i>
+      <i class="fa fa-play" id="play"></i>
+      <i class="fa fa-forward" id="forward"></i>
+      <i class="fa fa-random" id="shuffle"></i>
+    </div>
+  </div>
+
+  <div id="timer-box" class="container">
+    <h1>countdown Timer</h1>
+    <span id="timer">00:00:00:00</span>
+  </div>
+
+  <div id="form" class="container">
+    <h1>Form Validation</h1>
+    <form id="login-form">
+      <input type="text" placeholder="Username" required>
+      <input type="email" placeholder="Email address" required>
+      <input type="password" placeholder="Password" id="password" required>
+      <input type="password" placeholder="Repassword" id="repassword" required>
+      <button type="submit" id="submit-btn">Login</button>
+    </form>
+  </div>
+</body>
+
+<script src="javascript.js"></script>
